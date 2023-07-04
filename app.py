@@ -5,7 +5,7 @@ import pandas as pd
 st.title('Crypto Trading Bot')
 
 api_key = st.sidebar.text_input("njdF90HQ3oyUtHof4YG5kQGomrZFpGxOflQDvcqDrhHw854kHEUhIhm0S3xOcK6U", value='', type='password')
-api_secret = st.sidebar.text_input("QDhVMNp5ELCdYExeLy6csDyEfmMsBPqZgIBy58VXdtXke5C4C1Hsbd3jUtaULqm0oWq", value='', type='password')
+api_secret = st.sidebar.text_input("njdF90HQ3oyUtHof4YG5kQGomrZFpGxOflQDvcqDrhHw854kHEUhIhm0S3xOcK6U", value='', type='password')
 
 # Create a Binance client
 client = Client(api_key, api_secret, testnet=True)
@@ -20,10 +20,10 @@ units = 0.001
 trader = LongShortTrader(client, symbol, interval, units)
 
 # Get the most recent data
-trader.get_most_recent(days=1/76)
+trader.get_most_recent(days=1/24)
 
 # Define the strategy
-trader.define_strategy(sma_s=10, sma_m=20, sma_l=50)
+trader.define_strategy(sma_s=15, sma_m=50, sma_l=200)
 
 # Display a line chart of the closing prices
 st.line_chart(trader.data['Close'])
