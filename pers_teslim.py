@@ -63,7 +63,7 @@ import pandas as pd
 
 st.title('Crypto Trading Bot')
 
-data = pd.read_csv("C:/Users/oguz3/OneDrive/proje/bitcoin.csv", parse_dates=["Date"], index_col="Date")
+data = pd.read_csv("bitcoin.csv", parse_dates=["Date"], index_col="Date")
 # In[87]:
 
 
