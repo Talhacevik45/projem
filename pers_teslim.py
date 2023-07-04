@@ -6,8 +6,8 @@
 
 filepath = "bitcoin.csv"
 symbol = "BTCUSDT"
-start = "2017-08-17"
-end = "2021-10-07"
+start = "2014-09-17"
+end = "2023-03-04"
 tc = -0.00085
 sma_s = 15
 sma_m = 50
@@ -466,8 +466,8 @@ class Long_Short_Backtester():
 
 filepath = "bitcoin.csv"
 symbol = "BTCUSDT"
-start = "2017-08-17"
-end = "2021-10-07"
+start = "2014-09-17"
+end = "2023-03-04"
 tc = -0.00085
 sma_s = 15 
 sma_m = 50 
@@ -776,7 +776,7 @@ trader = LongShortTrader(symbol = symbol, bar_length = bar_length, sma_s = sma_s
 # In[225]:
 
 
-trader.start_trading(historical_days = 1/76)
+trader.start_trading(historical_days = 1/24)
 
 
 # In[162]:
