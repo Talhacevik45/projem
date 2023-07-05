@@ -5,8 +5,8 @@ def main():
     st.title('Crypto Trading Bot')
     
     # Kullanıcıdan giriş bilgilerini alalım
-    api_key = st.text_input("rDy56ksG5yMauFSNUkX3Bklg4GMjGQ0gvqTCUyi5KYxMzYHkl0HtA0XvTCpJxZQC")
-    api_secret = st.text_input("incVE8AX8aGyIj21UDKEjdJuYCbNFk8EN7x4FMD9aKKClQhMzm2dJ3uFx3mjgYhI")
+    api_key = st.text_input("yCqPvk02Cj7sp2wuAm1GCKzu9Hv1aqlKsnQT1WamSbIBpTweKX8bBBX69sGfZlBt")
+    api_secret = st.text_input("AgUGYXGJnpT2ht2ak0C6F91JmYtYXHWDJItc9tV9qgGlteDAjNbndxyMPSHfa9Kz")
     
     # Trader objesi oluşturalım
     client = Client(api_key, api_secret)
